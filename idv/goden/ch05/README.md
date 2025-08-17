@@ -21,8 +21,20 @@ Additional operations can be found in below selections:
 
 - **Examples using pytest with SQLAlchemy**<BR>https://gitlab.com/nick-hahow-demo/hahow-sqlalchemy-demo
 
+# Mongomock
+
+[mongomock](https://pypi.org/project/mongomock/2.3.1/) is a small library to help testing Python code that interacts with MongoDB via Pymongo. To understand what it’s useful for, we can take the following code:
+```python
+def increase_votes(collection):
+    for document in collection.find():
+        collection.update(document, {'$set' : {'votes' : document['votes'] + 1}})
+```
+
 ## MongoDB Extra Information
 https://gitlab.com/nick-ithelp-marathon/2023_ithelp_marathon
 
+# Pymongo
 
+[Pymongo](https://pypi.org/project/pymongo/) distribution contains tools for interacting with MongoDB database from Python. The bson package is an implementation of the BSON format for Python. The pymongo package is a native Python driver for MongoDB, offering both synchronous and asynchronous APIs. The gridfs package is a gridfs implementation on top of pymongo.
 
+PyMongo supports MongoDB 4.0, 4.2, 4.4, 5.0, 6.0, 7.0, and 8.0. PyMongo follows semantic versioning for its releases.
