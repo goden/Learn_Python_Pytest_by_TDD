@@ -1,7 +1,7 @@
 import pytest
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session, sessionmaker
-from idv.goden.ch06.models import Base
+from idv.goden.chapter02.unit06.models import Base
 
 @pytest.fixture(name='session')
 def session_fixture() -> Session:

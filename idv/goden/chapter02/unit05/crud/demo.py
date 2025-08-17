@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-from idv.goden.ch05.modes.demo import DemoUser
+from idv.goden.chapter02.unit05.modes.demo import DemoUser
 from datetime import datetime
 
 from pymongo.mongo_client import MongoClient

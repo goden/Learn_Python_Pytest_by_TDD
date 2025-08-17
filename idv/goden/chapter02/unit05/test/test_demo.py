@@ -1,14 +1,12 @@
-from typing import Any, Generator
-
 import pytest
 from pymongo import MongoClient
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session, sessionmaker
 from datetime import datetime
 
-from idv.goden.ch05.crud.demo import create_user
-from idv.goden.ch05.crud.demo import create_user_via_mongo
-from idv.goden.ch05.modes import Base
+from idv.goden.chapter02.unit05.crud.demo import create_user
+from idv.goden.chapter02.unit05.crud.demo import create_user_via_mongo
+from idv.goden.chapter02.unit05.modes import Base
 
 
 @pytest.fixture(name='session')

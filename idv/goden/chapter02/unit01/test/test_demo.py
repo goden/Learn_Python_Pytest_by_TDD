@@ -1,5 +1,5 @@
-from idv.goden.ch01.demo.demo import add_two_number
-from idv.goden.ch01.demo.demo import Calculator
+from idv.goden.chapter02.unit01.demo.demo import add_two_number
+from idv.goden.chapter02.unit01.demo.demo import Calculator
 
 
 def test_add_two_number():

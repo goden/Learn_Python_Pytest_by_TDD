@@ -1,4 +1,4 @@
-from idv.goden.ch02.crud.demo import add_two_number, Calculator
+from idv.goden.chapter02.unit02.crud.demo import add_two_number, Calculator
 
 
 def test_add_two_number():

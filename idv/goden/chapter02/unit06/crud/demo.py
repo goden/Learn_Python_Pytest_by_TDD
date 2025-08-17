@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-from idv.goden.ch06.models.demo import DemoUser
+from idv.goden.chapter02.unit06.models.demo import DemoUser
 from datetime import datetime
 
 def create_user(session:Session, username:str, birthday:datetime):
