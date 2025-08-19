@@ -11,6 +11,7 @@ def test_add():
 
     assert result == 30
 
+# Basic Usage
 def test_divide():
 
     num1 = 10
@@ -26,4 +27,25 @@ def test_divide():
 
         print(exec.value)
         assert isinstance(exec.value, ZeroDivisionError)
+
+def test_value_error():
+    with pytest.raises(ValueError) as exec_info:
+
+        int("abc")
+
+    print(exec_info.value)
+    assert "invalid literal" in str(exec_info.value)
+
+
+class MyError(Exception):
+    pass
+
+def fail():
+    raise MyError("Oops!")
+
+
+def test_my_error():
+    with pytest.raises(MyError) as exec_info:
+        fail()
+    assert "Oops!" in str(exec_info.value)
 
