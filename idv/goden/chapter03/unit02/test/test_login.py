@@ -6,7 +6,7 @@ from idv.goden.chapter03.unit02.action.login import do_login
 @pytest.mark.parametrize(
     argnames="username, password, expected",
     argvalues=[
-        ["goden", "1234", "ogin successfully!"],
+        ["goden", "1234", "Login successfully!"],
         ["nick", "1234", "Username is wrong!"],
         ["goden", "1235", "Password is wrong!"]
     ],
