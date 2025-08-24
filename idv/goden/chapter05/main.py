@@ -1,6 +1,5 @@
 import time
 
-from prompt_toolkit.keys import Keys
 from selenium.webdriver import Chrome
 from selenium.webdriver.common.by import By
 
@@ -86,8 +85,6 @@ def demo_keyboard_action(driver: Chrome):
     from selenium.webdriver.common.keys import Keys
     search_bar.send_keys(Keys.ENTER)
     time.sleep(20)
-
-
 
 # entry to the program context
 if __name__ == '__main__':
